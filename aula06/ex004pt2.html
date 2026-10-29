@@ -21,11 +21,13 @@
 <body>
     <h1>JavaScript</h1>
     <script>
-        var n1 = window.prompt('Digite um número:') //string
-        var n2 = window.prompt('Digite outro número:') //string
+        // pode ser usado somente parseInt ou parseFloat sem precisar do "Number.parseInt"
+        // mas pode ser usado somente o "Number" para que o propio js escolha como converter
+        var n1 = Number(window.prompt('Digite um número:')) //string
+        var n2 = Number(window.prompt('Digite outro número:')) //string
         var s = n1 + n2
-        Number.parseInt(s)
-        window.alert('A soma entre os números é ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+        //e pode ser usado pra converter pra string o n.toString() ou String(n) o String(n) sendo o comando mais recente
     </script>
 </body>
 </html>
